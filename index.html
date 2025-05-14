@@ -5,29 +5,268 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Mateus Aguiar</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/df4dadf2f3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQESc-owr0tWmA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709257215164?e=1746662400&v=beta&t=bSF1iW5PLO_3Fn5Tg3Rw9aoxlV5mO69xPVpHEY6AbvE"
-            alt="Foto de perfil">
-        <h1>Olá! Eu sou o Mateus Aguiar</h1>
     </header>
     <main>
-        <p>
-            Este portfólio está em construção. Enquanto isso, você pode encontrar meus projetos no meu repositório do <a
-                href="https://www.github.com/mateusargento/" target="_blank">GitHub</a>. 
-        </p>
-        <p>Acesse também o meu perfil no <a href="https://www.linkedin.com/in/mateus-a-b156081ab/"
-                target="_blank">LinkedIn</a> e entre em contato!</p>
+        <section class="home-content">
+
+            <div>
+                <!-- Foto de perfil -->
+                <div class="profile-photo-content">
+                    <img src="./assets/images/profile-photo.jpeg" alt="Foto de perfil" class="profile-photo">
+                </div>
+
+                <!-- Descrição -->
+                <div class="home-description">
+                    <p class="home-text">Olá! Meu nome é</p>
+                    <h1 class="home-title">Mateus Aguiar</h1>
+                    <p class="home-text">Sou Desenvolvedor de Software</p>
+                </div>
+
+                <a href="#" target="_blank" rel="noreferrer noopener" style=" text-decoration: none;">
+                    <i class="fa-solid fa-envelope icon" style="margin-top: 16px;"></i>
+                </a>
+                <a href="#" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
+                    <i class="fa-brands fa-linkedin icon" style="margin-top: 16px;"></i>
+                </a>
+            </div>
+
+            <!-- Botão -->
+            <button type="button" class="button">
+                Veja meus projetos
+            </button>
+        </section>
+
+        <section class="projects-content">
+            <!-- Texto -->
+            <h2 class="section-title">Projetos</h2>
+            <div>
+                <img src="./assets/images/painting.jpg" alt="Pintura" class="projects-painting" />
+                <h3 class="section-subtitle">Aplicativo com nome de exemplo 1</h3>
+            </div>
+            <p class="section-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <!-- Botões -->
+            <div class="projects-buttons">
+                <button type="button" class="button">
+                    Acessar demonstração
+                </button>
+                <button type="button" class="button-outline">
+                    Ir para o repositório
+                </button>
+            </div>
+
+            <!-- Tecnologias utilizadas -->
+            <h4 class="section-subtitle-secondary">Tecnologias utilizadas</h4>
+            <div class="projects-brand-content">
+                <img src="" alt="" class="projects-brand">
+                <img src="" alt="" class="projects-brand">
+                <img src="" alt="" class="projects-brand">
+                <img src="" alt="" class="projects-brand">
+            </div>
+
+            <!-- Imagens -->
+            <div class="projects-image-content">
+                <img src="" alt="" class="projects-image">
+                <img src="" alt="" class="projects-image">
+            </div>
+        </section>
+
+        <hr class="divider" />
+
+        <section class="about-content">
+            <!-- Introdução -->
+            <h2 class="section-title">Sobre</h2>
+            <p class="section-text">
+                Sou
+                <span class="section-text-semibold">desenvolvedor de software</span>
+                com 1 ano de experiência, focado em desenvolvimento
+                <span class="section-text-semibold">fullstack</span>
+                e motivado por transformar problemas em soluções. Trabalhei com
+                <span class="section-text-semibold">
+                    HTML, CSS, Javascript, ReactJS, JQuery, JEasyUI, PHP, SQL
+                </span>
+                e também já desenvolvi projetos utilizando
+                <span class="section-text-semibold">
+                    ReactJS, Typescript,
+                    Next.js, Sass, Node.js/Express,
+                    Java (Spring Boot), Firebase, Flutter
+                </span>
+                e outras tecnologias, sempre buscando aprender mais e me atualizar.
+                <br /><br />
+                Busco uma oportunidade para aplicar meus conhecimentos adquiridos contribuindo para o sucesso de
+                projetos inovadores. Se você busca um profissional proativo, dedicado e com grande potencial, entre em
+                contato!
+            </p>
+
+            <!-- Experiência -->
+            <h3 class="section-subtitle">Experiência</h3>
+            <p class="section-text">
+                CBM-UniCBE -
+                <span class="section-text-semibold">Desenvolvedor Fullstack</span>
+                <br /><br />
+                Atuei desenvolvendo novos recursos e realizando manutenção de códigos legado nos
+                sistemas interno dos funcionários e de secretaria online dos alunos, com boas práticas,
+                performance e trabalhando em equipe.
+                Responsável também pelo atendimento das requisições de alterações nos sistemas feitas
+                pelos funcionários através do e-mail.
+                Competências: HTML, CSS, JavaScript, JQuery, EasyUI, PHP, SQL / PostgreSQL
+                <br /><br />
+                <span class="section-text-disabled">Setembro de 2020 a Setembro de 2021</span>
+            </p>
+
+            <!-- Minha formação -->
+            <h3 class="section-subtitle">Minha formação</h3>
+            <div class="section-degree-text-content">
+                <p class="section-text">
+                    UNIASSELVI - Graduação em
+                    <span class="section-text-semibold">Análise e Desenvolvimento de Sistemas</span>
+                    <br />
+                    <span class="section-text-secondary">Ensino Superior</span>
+                    <br />
+                    <span class="section-text-disabled">Outubro de 2023 a Maio de 2024</span>
+                </p>
+                <p class="section-text">
+                    Faculdades Simonsen -
+                    <span class="section-text-semibold">Tecnologia Análise e Desenvolvimento de Sistemas</span>
+                    <br />
+                    <span class="section-text-secondary">Ensino Superior</span>
+                    <br />
+                    <span class="section-text-disabled">Janeiro de 2018 a Dezembro de 2020</span>
+                </p>
+                <p class="section-text">
+                    Instituto Tecnológico Simonsen -
+                    <span class="section-text-semibold">Técnico em Informática</span>
+                    <br />
+                    <span class="section-text-secondary">Ensino Médio Técnico</span>
+                    <br />
+                    <span class="section-text-disabled">Janeiro de 2015 a Dezembro de 2017</span>
+                </p>
+            </div>
+
+            <!-- Cursos -->
+            <h3 class="section-subtitle">Cursos</h3>
+            <div class="section-degree-text-content">
+                <p class="section-text">
+                    Udemy -
+                    <span class="section-text-semibold">ReactJS</span>
+                    <br />
+                    <span class="section-text-secondary">
+                        Competências: React Hooks, ContextAPI, Rest API, Git, Next.js, Firebase, Jest, Cypress
+                        <br />
+                        Certificado:
+                        <a href="#" target="_blank" rel="noreferrer noopener">
+                            ude.my/UC-3e2a6cee-c07e-4cf9-b5fc-3786275bfec8
+                        </a>
+                    </span>
+                    <br />
+                    <span class="section-text-disabled">Janeiro de 2022</span>
+                </p>
+
+                <p class="section-text">
+                    Udemy -
+                    <span class="section-text-semibold">Typescript</span>
+                    <br />
+                    <span class="section-text-secondary">
+                        Competências: Tipos, Orientação a Objetos
+                        <br />
+                        Certificado:
+                        <a href="#" target="_blank" rel="noreferrer noopener">
+                            ude.my/UC-9ea65bf4-d841-4761-8e37-
+                        </a>
+                    </span>
+                    <br />
+                    <span class="section-text-disabled">Abril de 2023</span>
+                </p>
+
+                <p class="section-text">
+                    Udemy -
+                    <span class="section-text-semibold">NodeJS/Express</span>
+                    <br />
+                    <span class="section-text-secondary">
+                        Competências: Express, MVC, Rest API, Validação, CORS, JWT
+                        <br />
+                        Certificado:
+                        <a href="#" target="_blank" rel="noreferrer noopener">
+                            ude.my/UC-98f4bd11-2062-4dca-b7ee-8daa9d19e14b
+                        </a>
+                    </span>
+                    <br />
+                    <span class="section-text-disabled">Maio de 2023</span>
+                </p>
+
+                <p class="section-text">
+                    Udemy -
+                    <span class="section-text-semibold">Java (Spring Boot)</span>
+                    <br />
+                    <span class="section-text-secondary">
+                        Competências: JPA, MVC, Rest API, Validação, Lombok, Spring Security, OAuth2, JWT, Swagger
+                        <br />
+                        Certificado:
+                        <a href="#" target="_blank" rel="noreferrer noopener">
+                            ude.my/UC-9f4e4dd3-8897-49ce-8d18-6a4713fa2273
+                        </a>
+                    </span>
+                    <br />
+                    <span class="section-text-disabled">Dezembro de 2024</span>
+                </p>
+            </div>
+
+            <!-- Cursos -->
+            <h3 class="section-subtitle">Idiomas</h3>
+            <div class="section-degree-text-content">
+                <p class="section-text">
+                    Cultura Inglesa -
+                    <span class="section-text-semibold">Inglês</span>
+                    <br />
+                    <span class="section-text-secondary"> Nível Intermediário (B2) </span>
+                    <br />
+                    <span class="section-text-disabled">
+                        Janeiro de 2016 a Dezembro de 2016 / Janeiro de 2018 a Dezembro de 2019
+                    </span>
+                </p>
+        </section>
+
+        <hr class="divider" />
+
+        <section class="contact-content">
+            <!-- Texto -->
+            <h2 class="section-title">Contato</h2>
+            <p class="section-text">
+                Entre em contato por e-mail ou pelo LinkedIn.
+            </p> <br />
+
+            <i class="fa-solid fa-envelope icon-disabled"></i>
+            <a href="#" target="_blank" rel="noreferrer noopener">
+                mateusargento@yahoo.com.br
+            </a>
+            <div style="margin-bottom: 8px"></div>
+            <i class="fa-brands fa-linkedin icon-disabled"></i>
+            <a href="#" target="_blank" rel="noreferrer noopener">
+                linkedin.com/in/mateus-a-b156081ab
+            </a>
+        </section>
     </main>
 </body>
 
