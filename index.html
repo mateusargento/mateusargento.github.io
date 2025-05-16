@@ -5,13 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Mateus Aguiar</title>
+    <script src="./script.js"></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Meta Tags -->
+    <title>Portfólio - Mateus Aguiar</title>
+    <meta name="title" content="Portfólio - Mateus Aguiar" />
+    <meta name="description" content="Minha descrição" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Portfólio - Mateus Aguiar" />
+    <meta property="og:description" content="Minha descrição" />
+    <meta property="og:image" content="./assets/images/profile-photo.jpeg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Portfólio - Mateus Aguiar" />
+    <meta property="twitter:description" content="Minha descrição" />
+    <meta property="twitter:image" content="./assets/images/profile-photo.jpeg" />
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -20,38 +41,107 @@
 
 <body>
     <header>
+        <!-- Menu Mobile -->
+        <section class="menu">
+            <!-- Botão do Menu -->
+            <i class="fa-solid fa-bars menu-icon"></i>
+
+            <!-- Logo -->
+            <span class="menu-logo">Mateus Aguiar</span>
+        </section>
+
+        <!-- Menu Desktop -->
+        <section class="menu-desktop">
+
+            <!-- Logo -->
+            <span class="menu-desktop-logo">Mateus Aguiar</span>
+
+            <!-- Links -->
+            <nav class="menu-desktop-links-content">
+                <div>
+                    <a href="#home" class="menu-desktop-link link">
+                        Página Inicial
+                    </a>
+                    <div class="menu-desktop-link-underline" id="home-underline"></div>
+                </div>
+                <div>
+                    <a href="#projects" class="menu-desktop-link link">
+                        Projetos
+                    </a>
+                    <div class="menu-desktop-link-underline" id="projects-underline"></div>
+                </div>
+                <div>
+                    <a href="#about" class="menu-desktop-link link">
+                        Sobre
+                    </a>
+                    <div class="menu-desktop-link-underline" id="about-underline"></div>
+                </div>
+                <div>
+                    <a href="#contact" class="menu-desktop-link link">
+                        Contato
+                    </a>
+                    <div class="menu-desktop-link-underline" id="contact-underline"></div>
+                </div>
+            </nav>
+        </section>
     </header>
+
     <main>
-        <section class="home-content">
+        <section class="home-content" id="home">
+            <div></div>
 
             <div>
-                <!-- Foto de perfil -->
-                <div class="profile-photo-content">
-                    <img src="./assets/images/profile-photo.jpeg" alt="Foto de perfil" class="profile-photo">
+                <div class="home-profile-photo-and-description-content">
+
+                    <!-- Foto de perfil -->
+                    <div class="home-profile-photo-content">
+                        <!-- Foto de perfil -->
+                        <picture class="home-profile-photo-content">
+                            <source media="(max-width: 1023px)" srcset="./assets/images/profile-photo.jpeg" width="184"
+                                height="184" />
+                            <source media="(max-width: 1366px)" srcset="./assets/images/profile-photo.jpeg" width="244"
+                                height="244" />
+                            <source media="(max-width: 1440px)" srcset="./assets/images/profile-photo.jpeg" width="260"
+                                height="260" />
+                            <source media="(max-width: 1920px)" srcset="./assets/images/profile-photo.jpeg" width="344"
+                                height="344" />
+                            <source media="(max-width: 3179px)" srcset="./assets/images/profile-photo.jpeg" width="460"
+                                height="460" />
+                            <source media="(min-width: 3180px)" srcset="./assets/images/profile-photo.jpeg" width="690"
+                                height="690" />
+                            <img src="./assets/images/profile-photo.jpeg" alt="Foto de perfil"
+                                class="home-profile-photo" />
+                        </picture>
+                    </div>
+
+                    <!-- Descrição -->
+                    <div class="home-description">
+                        <p class="home-text">Olá! Meu nome é</p>
+                        <h1 class="home-title">Mateus Aguiar</h1>
+                        <p class="home-text">Sou Desenvolvedor de Software</p>
+                    </div>
                 </div>
 
-                <!-- Descrição -->
-                <div class="home-description">
-                    <p class="home-text">Olá! Meu nome é</p>
-                    <h1 class="home-title">Mateus Aguiar</h1>
-                    <p class="home-text">Sou Desenvolvedor de Software</p>
+                <!-- Ícones dos Links -->
+                <div class="home-icons">
+                    <a href="mailto:mateusargento@yahoo.com.br" target="_blank" rel="noreferrer noopener"
+                        style="text-decoration: none;" aria-label="Me envie uma mensagem por email" class="link">
+                        <i class="fa-solid fa-envelope icon" style="margin-top: 16px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mateus-a-b156081ab" target="_blank" rel="noreferrer noopener"
+                        style="text-decoration: none;" aria-label="Acesse meu perfil no LinkedIn" class="link">
+                        <i class="fa-brands fa-linkedin icon" style="margin-top: 16px;"></i>
+                    </a>
                 </div>
-
-                <a href="#" target="_blank" rel="noreferrer noopener" style=" text-decoration: none;">
-                    <i class="fa-solid fa-envelope icon" style="margin-top: 16px;"></i>
-                </a>
-                <a href="#" target="_blank" rel="noreferrer noopener" style="text-decoration: none;">
-                    <i class="fa-brands fa-linkedin icon" style="margin-top: 16px;"></i>
-                </a>
             </div>
 
             <!-- Botão -->
-            <button type="button" class="button">
-                Veja meus projetos
+            <button type="button" class="button" id="buttonProjects" form="#projects">
+                Acesse meus projetos
             </button>
         </section>
 
-        <section class="projects-content">
+        <section class="projects-content" id="projects">
             <!-- Texto -->
             <h2 class="section-title">Projetos</h2>
             <div>
@@ -59,7 +149,7 @@
                 <h3 class="section-subtitle">Aplicativo com nome de exemplo 1</h3>
             </div>
             <p class="section-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
                 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
@@ -68,13 +158,9 @@
             </p>
 
             <!-- Botões -->
-            <div class="projects-buttons">
-                <button type="button" class="button">
-                    Acessar demonstração
-                </button>
-                <button type="button" class="button-outline">
-                    Ir para o repositório
-                </button>
+            <div class="projects-buttons-content">
+                <a href="#" target="_blank" rel="noreferrer noopener" class="button">Acessar demonstração</a>
+                <a href="#" target="_blank" rel="noreferrer noopener" class="button-outline">Ir para o repositório</a>
             </div>
 
             <!-- Tecnologias utilizadas -->
@@ -95,7 +181,7 @@
 
         <hr class="divider" />
 
-        <section class="about-content">
+        <section class="about-content" id="about">
             <!-- Introdução -->
             <h2 class="section-title">Sobre</h2>
             <p class="section-text">
@@ -138,7 +224,7 @@
 
             <!-- Minha formação -->
             <h3 class="section-subtitle">Minha formação</h3>
-            <div class="section-degree-text-content">
+            <div class="about-degree-text-content">
                 <p class="section-text">
                     UNIASSELVI - Graduação em
                     <span class="section-text-semibold">Análise e Desenvolvimento de Sistemas</span>
@@ -167,7 +253,7 @@
 
             <!-- Cursos -->
             <h3 class="section-subtitle">Cursos</h3>
-            <div class="section-degree-text-content">
+            <div class="about-degree-text-content">
                 <p class="section-text">
                     Udemy -
                     <span class="section-text-semibold">ReactJS</span>
@@ -176,7 +262,8 @@
                         Competências: React Hooks, ContextAPI, Rest API, Git, Next.js, Firebase, Jest, Cypress
                         <br />
                         Certificado:
-                        <a href="#" target="_blank" rel="noreferrer noopener">
+                        <a href="https://ude.my/UC-3e2a6cee-c07e-4cf9-b5fc-3786275bfec8" target="_blank"
+                            rel="noreferrer noopener" class="link">
                             ude.my/UC-3e2a6cee-c07e-4cf9-b5fc-3786275bfec8
                         </a>
                     </span>
@@ -192,8 +279,9 @@
                         Competências: Tipos, Orientação a Objetos
                         <br />
                         Certificado:
-                        <a href="#" target="_blank" rel="noreferrer noopener">
-                            ude.my/UC-9ea65bf4-d841-4761-8e37-
+                        <a href="https://ude.my/UC-9ea65bf4-d841-4761-8e37-e37e16040321" target="_blank"
+                            rel="noreferrer noopener" class="link">
+                            ude.my/UC-9ea65bf4-d841-4761-8e37-e37e16040321
                         </a>
                     </span>
                     <br />
@@ -208,7 +296,8 @@
                         Competências: Express, MVC, Rest API, Validação, CORS, JWT
                         <br />
                         Certificado:
-                        <a href="#" target="_blank" rel="noreferrer noopener">
+                        <a href="https://ude.my/UC-98f4bd11-2062-4dca-b7ee-8daa9d19e14b" target="_blank"
+                            rel="noreferrer noopener" class="link">
                             ude.my/UC-98f4bd11-2062-4dca-b7ee-8daa9d19e14b
                         </a>
                     </span>
@@ -224,7 +313,8 @@
                         Competências: JPA, MVC, Rest API, Validação, Lombok, Spring Security, OAuth2, JWT, Swagger
                         <br />
                         Certificado:
-                        <a href="#" target="_blank" rel="noreferrer noopener">
+                        <a href="https://ude.my/UC-9f4e4dd3-8897-49ce-8d18-6a4713fa2273" target="_blank"
+                            rel="noreferrer noopener" class="link">
                             ude.my/UC-9f4e4dd3-8897-49ce-8d18-6a4713fa2273
                         </a>
                     </span>
@@ -235,7 +325,7 @@
 
             <!-- Cursos -->
             <h3 class="section-subtitle">Idiomas</h3>
-            <div class="section-degree-text-content">
+            <div class="about-degree-text-content">
                 <p class="section-text">
                     Cultura Inglesa -
                     <span class="section-text-semibold">Inglês</span>
@@ -250,7 +340,7 @@
 
         <hr class="divider" />
 
-        <section class="contact-content">
+        <section class="contact-content" id="contact">
             <!-- Texto -->
             <h2 class="section-title">Contato</h2>
             <p class="section-text">
@@ -258,12 +348,13 @@
             </p> <br />
 
             <i class="fa-solid fa-envelope icon-disabled"></i>
-            <a href="#" target="_blank" rel="noreferrer noopener">
+            <a href="mailto:mateusargento@yahoo.com.br" target="_blank" rel="noreferrer noopener" class="link">
                 mateusargento@yahoo.com.br
             </a>
             <div style="margin-bottom: 8px"></div>
             <i class="fa-brands fa-linkedin icon-disabled"></i>
-            <a href="#" target="_blank" rel="noreferrer noopener">
+            <a href="https://www.linkedin.com/in/mateus-a-b156081ab" target="_blank" rel="noreferrer noopener"
+                class="link">
                 linkedin.com/in/mateus-a-b156081ab
             </a>
         </section>
