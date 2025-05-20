@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Mateus Aguiar</title>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="./minified/script-minified.js"></script>
+    <link rel="stylesheet" href="/minified/style-minified.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 
     <!-- Meta Tags -->
     <title>Portfólio - Mateus Aguiar</title>
@@ -15,14 +16,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:url" content="https://mateusargento.github.io/" />
     <meta property="og:title" content="Portfólio - Mateus Aguiar" />
     <meta property="og:description" content="Minha descrição" />
     <meta property="og:image" content="./assets/images/profile-photo.jpeg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:url" content="https://mateusargento.github.io/" />
     <meta property="twitter:title" content="Portfólio - Mateus Aguiar" />
     <meta property="twitter:description" content="Minha descrição" />
     <meta property="twitter:image" content="./assets/images/profile-photo.jpeg" />
@@ -31,23 +32,36 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Shadows+Into+Light&display=swap"
-        rel="stylesheet">
+    <link href="./modules/google-fonts.css" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/df4dadf2f3.js" crossorigin="anonymous"></script>
+    <script src="./modules/kit-fontawesome.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <!-- Menu Mobile -->
-        <section class="menu">
+        <section class="menu-mobile">
             <!-- Botão do Menu -->
-            <i class="fa-solid fa-bars menu-icon"></i>
+            <i class="fa-solid fa-bars menu-mobile-icon" id="menu-mobile-icon-open"></i>
 
             <!-- Logo -->
-            <span class="menu-logo">Mateus Aguiar</span>
+            <span class="menu-mobile-logo">Mateus Aguiar</span>
+
+            <div class="menu-mobile-content-bg">
+            </div>
+            <div class="menu-mobile-content">
+                <!-- Botão de fechar o Menu -->
+                <i class="fa-solid fa-xmark menu-mobile-icon-background" id="menu-mobile-icon-close"></i>
+
+                <!-- Links -->
+                <nav class="menu-mobile-links-content">
+                    <a href="#home" rel="noreferrer noopener" class="menu-mobile-link">Página Inicial</a>
+                    <a href="#projects" rel="noreferrer noopener" class="menu-mobile-link">Projetos</a>
+                    <a href="#about" rel="noreferrer noopener" class="menu-mobile-link">Sobre</a>
+                    <a href="#contact" rel="noreferrer noopener" class="menu-mobile-link">Contato</a>
+                </nav>
+            </div>
         </section>
 
         <!-- Menu Desktop -->
@@ -59,19 +73,19 @@
             <!-- Links -->
             <nav class="menu-desktop-links-content">
                 <div>
-                    <a href="#home" class="menu-desktop-link link">
+                    <a href="#home" class="menu-desktop-link link" rel="noreferrer noopener" style="font-weight: bold;">
                         Página Inicial
                     </a>
                     <div class="menu-desktop-link-underline" id="home-underline"></div>
                 </div>
                 <div>
-                    <a href="#projects" class="menu-desktop-link link">
+                    <a href="#projects" class="menu-desktop-link link" rel="noreferrer noopener">
                         Projetos
                     </a>
                     <div class="menu-desktop-link-underline" id="projects-underline"></div>
                 </div>
                 <div>
-                    <a href="#about" class="menu-desktop-link link">
+                    <a href="#about" class="menu-desktop-link link" rel="noreferrer noopener">
                         Sobre
                     </a>
                     <div class="menu-desktop-link-underline" id="about-underline"></div>
@@ -97,20 +111,20 @@
                     <div class="home-profile-photo-content">
                         <!-- Foto de perfil -->
                         <picture class="home-profile-photo-content">
-                            <source media="(max-width: 1023px)" srcset="./assets/images/profile-photo.jpeg" width="184"
-                                height="184" />
-                            <source media="(max-width: 1366px)" srcset="./assets/images/profile-photo.jpeg" width="244"
-                                height="244" />
-                            <source media="(max-width: 1440px)" srcset="./assets/images/profile-photo.jpeg" width="260"
-                                height="260" />
-                            <source media="(max-width: 1920px)" srcset="./assets/images/profile-photo.jpeg" width="344"
-                                height="344" />
-                            <source media="(max-width: 3179px)" srcset="./assets/images/profile-photo.jpeg" width="460"
-                                height="460" />
-                            <source media="(min-width: 3180px)" srcset="./assets/images/profile-photo.jpeg" width="690"
-                                height="690" />
+                            <source media="(max-width: 1023px)" srcset="./assets/images/profile-photo-184.jpeg"
+                                width="184" height="184" />
+                            <source media="(max-width: 1366px)" srcset="./assets/images/profile-photo-244.jpeg"
+                                width="244" height="244" />
+                            <source media="(max-width: 1440px)" srcset="./assets/images/profile-photo-260.jpeg"
+                                width="260" height="260" />
+                            <source media="(max-width: 1920px)" srcset="./assets/images/profile-photo-344.jpeg"
+                                width="344" height="344" />
+                            <source media="(max-width: 3179px)" srcset="./assets/images/profile-photo-460.jpeg"
+                                width="460" height="460" />
+                            <source media="(min-width: 3180px)" srcset="./assets/images/profile-photo-690.jpeg"
+                                width="690" height="690" />
                             <img src="./assets/images/profile-photo.jpeg" alt="Foto de perfil"
-                                class="home-profile-photo" />
+                                class="home-profile-photo" width="800" height="800" />
                         </picture>
                     </div>
 
@@ -145,7 +159,8 @@
             <!-- Texto -->
             <h2 class="section-title">Projetos</h2>
             <div>
-                <img src="./assets/images/painting.jpg" alt="Pintura" class="projects-painting" />
+                <img src="./assets/images/painting-76.jpg" alt="Pintura" class="projects-painting" width="76"
+                    height="56" />
                 <h3 class="section-subtitle">Aplicativo com nome de exemplo 1</h3>
             </div>
             <p class="section-text">
@@ -174,8 +189,8 @@
 
             <!-- Imagens -->
             <div class="projects-image-content">
-                <img src="" alt="" class="projects-image">
-                <img src="" alt="" class="projects-image">
+                <img src="" alt="" class="projects-image" width="200" height="200">
+                <img src="" alt="" class="projects-image" width="200" height="200">
             </div>
         </section>
 
@@ -200,18 +215,21 @@
                     Java (Spring Boot), Firebase, Flutter
                 </span>
                 e outras tecnologias, sempre buscando aprender mais e me atualizar.
-                <br /><br />
+            </p>
+            <p>
                 Busco uma oportunidade para aplicar meus conhecimentos adquiridos contribuindo para o sucesso de
                 projetos inovadores. Se você busca um profissional proativo, dedicado e com grande potencial, entre em
                 contato!
             </p>
+
 
             <!-- Experiência -->
             <h3 class="section-subtitle">Experiência</h3>
             <p class="section-text">
                 CBM-UniCBE -
                 <span class="section-text-semibold">Desenvolvedor Fullstack</span>
-                <br /><br />
+            </p>
+            <p>
                 Atuei desenvolvendo novos recursos e realizando manutenção de códigos legado nos
                 sistemas interno dos funcionários e de secretaria online dos alunos, com boas práticas,
                 performance e trabalhando em equipe.
