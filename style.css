@@ -13,6 +13,7 @@
 
 body {
     margin: 0px;
+    background-color: var(--background);
 }
 
 main {
@@ -23,7 +24,7 @@ main {
 /* ---- Menu ---- */
 header {
     width: 100vw;
-    height: 84px;
+    height: 72px;
     background-color: var(--background);
     position: fixed;
     -webkit-transition: 0.2s;
@@ -34,7 +35,7 @@ header {
 
 .menu-mobile {
     width: var(--width);
-    height: 84px;
+    height: 72px;
     padding: 0 var(--margin);
     display: grid;
     -ms-grid-column: 32px calc(100vw - 32px - (var(--margin) * 2));
@@ -124,8 +125,8 @@ header {
     display: -ms-grid;
     display: grid;
     /* O cálculo é o tamanho do botão + a "margin-bottom" dele, que está na classe ".button" */
-    -ms-grid-row: 84px auto calc(56px + 40px);
-    grid-template-rows: 84px auto calc(56px + 40px);
+    -ms-grid-row: 84px auto calc(56px + 60px);
+    grid-template-rows: 84px auto calc(56px + 60px);
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
@@ -152,13 +153,17 @@ header {
     border: 4px solid var(--primary-text);
 }
 
+#buttonProjects {
+    margin: 0 0 60px 0;
+}
+
 .home-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
 .home-title {
-    font-size: 3.8rem;
+    font-size: 3.3rem;
     margin: 0;
 }
 
@@ -243,7 +248,7 @@ header {
     color: var(--background-text);
     border: none;
     border-radius: 100px;
-    margin: 0 0 40px 0;
+    margin: 0 0 8px 0;
     padding: 16px 0;
     text-decoration: none;
     text-align: center;
@@ -446,6 +451,10 @@ header {
         position: absolute;
         right: var(--margin-desktop);
         bottom: var(--margin-desktop);
+    }
+
+    #buttonProjects {
+        margin: 0 auto;
     }
 
     /* ---- Projetos ---- */
