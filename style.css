@@ -121,24 +121,22 @@ header {
 .home-content {
     min-width: var(--width);
     min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    display: -ms-grid;
+    display: grid;
+    /* O cálculo é o tamanho do botão + a "margin-bottom" dele, que está na classe ".button" */
+    -ms-grid-row: 84px auto calc(56px + 40px);
+    grid-template-rows: 84px auto calc(56px + 40px);
     -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .home-profile-photo-and-description-content {
-    margin-top: -12vh;
+    margin-top: 4vh;
 }
 
 .home-profile-photo-content {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 3vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -245,7 +243,7 @@ header {
     color: var(--background-text);
     border: none;
     border-radius: 100px;
-    margin: 0 0 8px 0;
+    margin: 0 0 40px 0;
     padding: 16px 0;
     text-decoration: none;
     text-align: center;
@@ -390,6 +388,13 @@ header {
     /* ---- Página inicial ---- */
     .home-content {
         min-width: var(--width-desktop);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .home-profile-photo-and-description-content {
